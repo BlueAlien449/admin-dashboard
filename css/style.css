@@ -24,9 +24,9 @@
 main{
     background-color: #e2e8f0;
     display: grid;
-    gap: 15px;
+    gap: 25px;
     grid-template-columns: 3fr 1fr;
-    padding: 15px;
+    padding: 30px 45px 15px 30px;
 }
 
 header{
@@ -49,26 +49,32 @@ aside{
 
 .card-container{
     display: grid;
-    gap: 15px;
+    gap: 25px;
     grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
 }
 
 .card{
     background-color: #fff;
-}
-
-.announcement{
-    background-color: #fff;
+    border-radius: 10px;
+    border-left: 6px solid #fbbf24;
+    display: grid;
+    padding: 35px 20px 0px 20px;
+    height: 180px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
 .announcement-cards{
-    display: grid;
-    gap: 15px;
-    grid-template-rows: repeat(3, 1fr);
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
 .user-container{
+    border-radius: 10px;
+    padding: 30px;
     background-color: #fff;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
 .user{
@@ -78,12 +84,12 @@ aside{
 }
 
 .user-info{
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 .side{
     display: grid;
-    gap: 15px;
+    gap: 25px;
 }
 
 .sidebar-buttons{
@@ -189,6 +195,7 @@ form{
 .greet, .user-name{
     font-weight: 600;
 }
+
 .greet{
     font-size: 16px;
 }
@@ -204,4 +211,58 @@ form{
 .user-img{
     height: 85px;
     width: 85px ;
+}
+
+.action-icons{
+    font-size: 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 40px);
+    place-items: center;
+    place-content: end;
+}
+
+.action-icons > li{
+    margin: 15px 15px 0 15px;
+}
+
+.project-text{
+    margin: 0 0 15px 0;
+}
+
+.project-actions{
+    align-self: end;
+    margin: 0 0 15px;
+}
+
+h3{
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0 0 15px;
+}
+
+.description{
+    font-size: 18px;
+    color: #646a70;
+}
+
+.user:last-child{
+    margin-bottom: 0;
+}
+
+.trending-username{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.announcement{
+    margin-bottom: 15px;
+}
+
+hr{
+    margin: 15px 0;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.announcement > p{
+    color: #646a70;
 }
