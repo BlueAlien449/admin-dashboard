@@ -22,7 +22,7 @@
 }
 
 main{
-    background-color: #475569;
+    background-color: #e2e8f0;
     display: grid;
     gap: 15px;
     grid-template-columns: 3fr 1fr;
@@ -30,15 +30,21 @@ main{
 }
 
 header{
-    background-color: #94a3b8;
+    background-color: #fff;
     grid-column: 2;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 2fr 1fr;
+    padding: 1rem 3rem;
+    position: relative;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
 aside{
-    background-color: #172554;
+    background-color: #0284c7;
     grid-row: 1 / span 2;
     color: white;
-    padding: 25px;
+    padding: 25px 35px;
 }
 
 .card-container{
@@ -48,11 +54,11 @@ aside{
 }
 
 .card{
-    background-color: #94a3b8;
+    background-color: #fff;
 }
 
 .announcement{
-    background-color: #94a3b8;
+    background-color: #fff;
 }
 
 .announcement-cards{
@@ -62,7 +68,7 @@ aside{
 }
 
 .user-container{
-    background-color: #94a3b8;
+    background-color: #fff;
 }
 
 .user{
@@ -114,4 +120,88 @@ aside{
 .main-buttons > li > iconify-icon, .settings-buttons > li > iconify-icon{
     font-size: 25px;
     margin: 0 25px 0 0;
+}
+
+.upper-header, .lower-header{
+    display: flex;
+}
+
+
+.main-user{
+    display: flex;
+    align-items: center;
+}
+
+.action-buttons > ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.action-buttons{
+    place-self: center;
+}
+
+input{
+    border-radius: 15px;
+    width: 36rem;
+    height: 2rem;
+    padding: 15px;
+    border: none;
+    background-color: #e2e8f0;
+}
+
+form > iconify-icon, .user-icon > iconify-icon{
+    align-self: center;
+    font-size: 24px;
+    margin: 0 25px 0 0;
+}
+
+button{
+    border-radius: 15px;
+    padding: 5px 20px;
+    width: 100px;
+    height: 35px;
+    border: none;
+    background-color: #0284c7;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+form{
+    display: flex;
+    align-self: center;
+}
+
+.user-icon{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.username{
+    margin: 0 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.greet, .user-name{
+    font-weight: 600;
+}
+.greet{
+    font-size: 16px;
+}
+
+.user-name{
+    font-size: 22px;
+}
+
+.user-text{
+    margin: 0 20px;
+}
+
+.user-img{
+    height: 85px;
+    width: 85px ;
 }
