@@ -15,17 +15,17 @@
 
 .crop, .user-img{
     border-radius: 50%;
-    height: 65px;
+    height: 55px;
     object-fit: cover;
     overflow: hidden;
-    width: 65px;
+    width: 55px;
 }
 
 main{
     background-color: #e2e8f0;
     display: grid;
     gap: 25px;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 4fr 1fr;
     padding: 30px 45px 15px 30px;
 }
 
@@ -59,7 +59,7 @@ aside{
     border-left: 6px solid #fbbf24;
     display: grid;
     padding: 35px 20px 0px 20px;
-    height: 180px;
+    height: 185px;
     box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -72,9 +72,11 @@ aside{
 
 .user-container{
     border-radius: 10px;
-    padding: 30px;
+    padding: 15px;
     background-color: #fff;
     box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    display: grid;
+    place-content: center;
 }
 
 .user{
@@ -84,7 +86,7 @@ aside{
 }
 
 .user-info{
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 .side{
@@ -241,7 +243,7 @@ h3{
 }
 
 .description{
-    font-size: 18px;
+    font-size: 14px;
     color: #646a70;
 }
 
@@ -250,7 +252,7 @@ h3{
 }
 
 .trending-username{
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
 }
 
@@ -263,6 +265,19 @@ hr{
     color: rgba(0, 0, 0, 0.2);
 }
 
+.announcement > h4{
+    font-size: 15px;
+}
+
 .announcement > p{
+    font-size: 11px;
+    color: #646a70;
+}
+
+.project-text > h4{
+    font-size: 18px
+}
+
+.project-text > p{
     color: #646a70;
 }
